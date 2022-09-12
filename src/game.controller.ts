@@ -19,3 +19,15 @@ export const findGame = (req: Request, res: Response) => {
         res.json(gameToFind);
     }
 }
+
+export const createGame = (req: Request, res: Response) => {
+    const gameToAdd = {
+        id: gamesArray.length +1,
+        title: req.body.title,
+        genre: req.body.genre,
+        price: req.body.price,
+    };
+    gamesArray.push(gameToAdd);
+    saveGamesJSON(gamesArray);
+    res.status(200).send({alert: "Added a new game to the list of games."})
+};
