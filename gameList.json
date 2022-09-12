@@ -4,5 +4,11 @@
     "title": "Natural Selection",
     "genre": "FPS/RTS",
     "price": 10
+  },
+  {
+    "id": 2,
+    "title": "Starcraft",
+    "genre": "RTS",
+    "price": 15
   }
 ]

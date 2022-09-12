@@ -12,6 +12,6 @@ gameRouter.post("/", gameModelValidation ,createGame);
 // delete game with id
 gameRouter.delete("/:id", deleteGame );
 // Update game with supplied id and validated body);
-gameRouter.put("/:id", ); 
+gameRouter.put("/:id", gameModelValidation,  ); 
 
 export default gameRouter;

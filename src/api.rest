@@ -2,11 +2,9 @@
 GET http://localhost:4444/api/games
 
 ### Get specific game, should return 200 ok
-
 GET http://localhost:4444/api/games/1
 
 ### Try get faulty game id, should return 404 not found
-
 GET http://localhost:4444/api/games/4123123
 
 ### POST a new game to be added to list, should return 200 ok
@@ -25,8 +23,7 @@ Content-Type: application/json
     "asd": "Starcraft", "genre": "R", "price": 15
 }
 
-### with missing attribute, should also return 400
-
+### post new game with missing attribute, should also return 400
 POST http://localhost:4444/api/games
 Content-Type: application/json
 
@@ -38,5 +35,5 @@ Content-Type: application/json
 ### DELETE a game by supplying ID as a number in the url, should return 200 ok
 DELETE http://localhost:4444/api/games/2
 
-### test if supplying a nonexisting id returns error 
+### test if supplying a nonexisting id returns error, should return 404 not found
 DELETE http://localhost:4444/api/games/2521342
