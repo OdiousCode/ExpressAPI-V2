@@ -16,3 +16,11 @@ Content-Type: application/json
 {
     "title": "Starcraft", "genre": "RTS", "price": 15
 }
+
+### POST a new game to be added to list with invalid info, should return 400 bad request
+POST http://localhost:4444/api/games
+Content-Type: application/json
+
+{
+    "asd": "Starcraft", "genre": "R", "price": 15
+}
