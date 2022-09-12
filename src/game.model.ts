@@ -1,4 +1,4 @@
-import { loadGamesJSON } from "./fileOperations";
+import { loadGamesJSON } from './fileOperations';
 
 export interface Game {
     id: number,

@@ -1,5 +1,5 @@
-import fs from "fs";
-import { Game } from "./game.model"
+import fs from 'fs';
+import { Game } from './game.model';
 
 export function loadGamesJSON(file = ''): Game[] {
     if (fs.existsSync(file)) {
