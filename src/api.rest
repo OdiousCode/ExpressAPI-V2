@@ -24,3 +24,12 @@ Content-Type: application/json
 {
     "asd": "Starcraft", "genre": "R", "price": 15
 }
+
+### with missing attribute, should also return 400
+
+POST http://localhost:4444/api/games
+Content-Type: application/json
+
+{
+    "genre": "RTS", "price": 15
+}
