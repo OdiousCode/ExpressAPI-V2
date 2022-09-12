@@ -57,10 +57,18 @@ Content-Type: application/json
 }
 
 ### Faulty update data, testing validation (missing field), should return 400 bad request
-PUT http://localhost:4444/api/games/1
+PUT http://localhost:4444/api/games/55
 Content-Type: application/json
 
 {
     "title":"Natural Selection", "price":-1
 
+}
+
+### Faulty ID in URL, testing error catching (no game with ID in URL), should return 404 not found
+PUT http://localhost:4444/api/games/1
+Content-Type: application/json
+
+{
+    "title":"Natural Selection", "genre":"RTS", "price":11
 }

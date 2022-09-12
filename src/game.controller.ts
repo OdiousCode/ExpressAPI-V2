@@ -51,6 +51,7 @@ export const updateGame = (req: Request, res: Response) =>  {
     {
         return res.status(404).send({alert: "Could not find a game with that ID to update"});
     }
+    else{
     gameToUpdate.title = req.body.title;
     gameToUpdate.genre = req.body.genre;
     gameToUpdate.price = req.body.price;
@@ -59,4 +60,5 @@ export const updateGame = (req: Request, res: Response) =>  {
     gamesArray.push(gameToUpdate);
     saveGamesJSON(gamesArray);
     res.status(200).send({alert: "The game with ID "+ req.params.id + " has been updated successfully."});
+    }
 };
