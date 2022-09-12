@@ -1,7 +1,7 @@
 # Simpel API med express & typescript, med filhantering i form av JSON. #
-## Av: Görgen Andersson ##  
+## Av: Görgen Andersson (OdiousCode) ##  
 
-## https://github.com/OdiousCode/ExpressAPI ##
+## https://github.com/OdiousCode/ExpressAPI-V2 ##
 
 ## Hur du startar med VSCode##
 
@@ -11,7 +11,7 @@ Nu du kan testa projektets endpoints med medföljande .rest-fil om du har extens
 Alternativt browsa in på "http://localhost:4444/api/games"
 
 ## Komplettering ##
-Då jag kände att jag inte hade superbra koll på hur jag skulle få till validering i det föregående projektet, så gjorde jag valet att börja om från början, med lite hjälp ifrån webben.
+Då jag kände att jag inte hade superbra koll på hur jag skulle få till validering i det föregående projektet, så gjorde jag valet att börja om från början, med lite hjälp ifrån webben och paketet joi.
 
 ## Krav för godkänt ##
 
