@@ -2,9 +2,8 @@ import express from 'express';
 import { logger } from './middleware';
 import gameRouter from './game.router';
 
-
 const app = express();
-const port = 3333;
+const port = 4444;
 
 app.use(express.json());
 

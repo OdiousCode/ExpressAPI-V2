@@ -1,5 +1,5 @@
 // endpoint functions here
-import { Request, Response } from 'express';
+import { NextFunction, Request, Response } from 'express';
 import { loadGamesJSON } from './fileOperations';
 
 

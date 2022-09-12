@@ -1,2 +1,2 @@
 ### Get list of games
-GET http://localhost:3333/api/games
+GET http://localhost:4444/api/games
