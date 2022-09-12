@@ -5,6 +5,7 @@ const port = 3333;
 
 app.use(express.json());
 
+app.use(logger);
 
 app.listen(port, () => {
   return console.log(`API is listening at http://localhost:${port}`);
