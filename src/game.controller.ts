@@ -52,7 +52,7 @@ export const updateGame = (req: Request, res: Response) =>  {
         return res.status(404).send({alert: "Could not find a game with that ID to update"});
     }
     gameToUpdate.title = req.body.title;
-    gameToUpdate.genre = req.body.title;
+    gameToUpdate.genre = req.body.genre;
     gameToUpdate.price = req.body.price;
     const updateIndex = gamesArray.indexOf(gameToUpdate);
     gamesArray.splice(updateIndex, 1);
