@@ -1,2 +1,10 @@
-### Get list of games
+### Get list of games, should return 200 ok
 GET http://localhost:4444/api/games
+
+### Get specific game, should return 200 ok
+
+GET http://localhost:4444/api/games/1
+
+### Try get faulty game id, should return 404 not found
+
+GET http://localhost:4444/api/games/4123123
