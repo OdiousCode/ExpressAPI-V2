@@ -33,3 +33,10 @@ Content-Type: application/json
 {
     "genre": "RTS", "price": 15
 }
+
+
+### DELETE a game by supplying ID as a number in the url, should return 200 ok
+DELETE http://localhost:4444/api/games/2
+
+### test if supplying a nonexisting id returns error 
+DELETE http://localhost:4444/api/games/2521342

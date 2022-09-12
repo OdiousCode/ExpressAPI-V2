@@ -29,4 +29,4 @@ Då jag kände att jag inte hade superbra koll på hur jag skulle få till valid
 - [X] All data skall vara sparad i en JSON-fil istället för i serverfilen
 - [X] Datan i JSON-filen skall uppdateras då något läggs till, uppdateras eller tas bort
 - [ ] Ett klient-gränssnitt skall byggas för att anropa API:ets alla olika endpoints och presentera datan, redigeringsformulär skall fyllas i med befintlig information.
-- [ ] Ytterligare en GET endpoint skall läggas till där det går att hämta ett specifikt objekt
+- [X] Ytterligare en GET endpoint skall läggas till där det går att hämta ett specifikt objekt

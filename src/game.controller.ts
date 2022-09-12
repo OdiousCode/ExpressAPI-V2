@@ -31,3 +31,16 @@ export const createGame = (req: Request, res: Response) => {
     saveGamesJSON(gamesArray);
     res.status(200).send({alert: "Added a new game to the list of games."})
 };
+
+
+export const deleteGame = (req: Request, res: Response) => {
+    const gameToDelete = gamesArray.find((g) => g.id === parseInt(req.params.id));
+    if(!gameToDelete) 
+    {
+        return res.status(404).send({alert: "No game with ID " + req.params.id + " to delete"});
+    }
+    const deleteIndex = gamesArray.indexOf(gameToDelete);
+    gamesArray.splice(deleteIndex, 1);
+    saveGamesJSON(gamesArray);
+    res.status(200).send({alert: "The game with ID " + gameToDelete.id + " has been deleted."});
+};

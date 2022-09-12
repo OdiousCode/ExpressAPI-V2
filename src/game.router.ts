@@ -1,5 +1,5 @@
 import express from 'express';
-import { createGame, findGame, getAllGames } from './game.controller';
+import { createGame, deleteGame, findGame, getAllGames } from './game.controller';
 import { gameModelValidation } from './middleware';
 
 const gameRouter = express.Router();
@@ -10,7 +10,7 @@ gameRouter.get("/:id", findGame );
 // post game with validation
 gameRouter.post("/", gameModelValidation ,createGame);
 // delete game with id
-gameRouter.delete("/:id", );
+gameRouter.delete("/:id", deleteGame );
 // Update game with supplied id and validated body);
 gameRouter.put("/:id", ); 
 
