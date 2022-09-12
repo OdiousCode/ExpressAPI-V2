@@ -8,7 +8,7 @@ export const logger = (req: Request, res: Response, next: NextFunction) => {
     next();
 };
 
-// validation functionality with joi
+// validation functionality with joi, title should atleast contain one letter, genre atleast 3 letters and price shouldnt be possible to set negative
 export function gameModelValidation(req: Request, res: Response, next: NextFunction) {
     const gameModelToValidate = joi.object( {
         title: joi.string().min(1).required(),

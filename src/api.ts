@@ -7,7 +7,7 @@ const port = 4444;
 
 app.use(express.json());
 
-// Logs endpoint action to console
+// Logs endpoint action and body to console
 app.use(logger);
 
 app.listen(port, () => {

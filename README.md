@@ -3,15 +3,15 @@
 
 ## https://github.com/OdiousCode/ExpressAPI ##
 
-## Hur du startar ##
+## Hur du startar med VSCode##
 
 För att köra projektet börjar du med en "npm -i" i terminalen, för att installera nödvända packages.
 Sedan för att starta så skriver du "npm run dev" i terminalen, så skall server studsa igång. 
 Nu du kan testa projektets endpoints med medföljande .rest-fil om du har extensionet "Rest-client" i VSCode.
-Alternativt browsa in på "http://localhost:3333/api/games"
+Alternativt browsa in på "http://localhost:4444/api/games"
 
 ## Komplettering ##
-Då jag kände att jag inte hade superbra koll på hur jag skulle få till validering i det föregående projektet, så gjorde jag valet att börja om med lite hjälp ifrån webben.
+Då jag kände att jag inte hade superbra koll på hur jag skulle få till validering i det föregående projektet, så gjorde jag valet att börja om från början, med lite hjälp ifrån webben.
 
 ## Krav för godkänt ##
 

@@ -44,3 +44,19 @@ export const deleteGame = (req: Request, res: Response) => {
     saveGamesJSON(gamesArray);
     res.status(200).send({alert: "The game with ID " + gameToDelete.id + " has been deleted."});
 };
+
+export const updateGame = (req: Request, res: Response) =>  {
+    const gameToUpdate = gamesArray.find((g) => g.id === parseInt(req.params.id));
+    if(!gameToUpdate) 
+    {
+        return res.status(404).send({alert: "Could not find a game with that ID to update"});
+    }
+    gameToUpdate.title = req.body.title;
+    gameToUpdate.genre = req.body.title;
+    gameToUpdate.price = req.body.price;
+    const updateIndex = gamesArray.indexOf(gameToUpdate);
+    gamesArray.splice(updateIndex, 1);
+    gamesArray.push(gameToUpdate);
+    saveGamesJSON(gamesArray);
+    res.status(200).send({alert: "The game with ID "+ req.params.id + " has been updated successfully."});
+};
